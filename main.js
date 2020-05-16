@@ -40,7 +40,9 @@ map = L.map('mapcontainer');
 	  minZoom: 1,
 	  //maxBounds: [[35.47, 139.62], [35.45, 139.64]],
   });
+  map.setView([37.9243912, 139.045191], 5);	//日本全域
 
+  /*
   const hash = new L.Hash(map);
   const url = location.href;
   const match = url.match(/#(\d{1,2})\/(-?\d[0-9.]*)\/(-?\d[0-9.]*)/);
@@ -48,8 +50,9 @@ map = L.map('mapcontainer');
       const [, zoom, lat, lon] = match;
       map.setView([lat, lon], zoom);
   } else {
-      map.setView([37.9243912, 139.045191], 5);	//日本全域
+      
   }
+  */
 
   const kokudoLayer = L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg',{
 	attribution: '© <a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>',
