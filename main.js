@@ -99,7 +99,7 @@ map = L.map('mapcontainer');
 
 function openPhotoNearby(latlng){
 
-    const url = `https://a.mapillary.com/v3/images?per_page=1&client_id=${client_id}&closeto=${latlng.lng},${latlng.lat}&radius=1000` ;
+    const url = `https://a.mapillary.com/v3/images?per_page=1&client_id=${client_id}&closeto=${latlng.lng},${latlng.lat}&radius=3000` ;
 	
 	const request = new XMLHttpRequest();
 	//request.responseType = 'json';
