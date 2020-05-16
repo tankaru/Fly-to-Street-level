@@ -114,7 +114,7 @@ function openPhotoNearby(latlng){
         const coordinates = feature.geometry.coordinates;
 
         flying = true;
-        map.flyTo([coordinates[1], coordinates[0]], 20);
+        map.flyTo([coordinates[1], coordinates[0]], 23);
         
         mly.moveToKey(key);
 
